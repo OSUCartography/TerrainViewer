@@ -1,0 +1,1 @@
+varying vec3 N, v, L;void main(void) {    L = normalize(vec3(gl_LightSource[0].position));    v = vec3(gl_ModelViewMatrix * gl_Vertex);    N = normalize(gl_NormalMatrix * gl_Normal);    gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;}
